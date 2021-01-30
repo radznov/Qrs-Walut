@@ -19,10 +19,24 @@ extension Date {
         return self.getFormatedDate(date)
     }
     
+    static func dayOfWeek(_ date: Date) -> String? {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "EEEE"
+            return dateFormatter.string(from: date).capitalized
+        }
+    
+    static func convertStringToDate (_ strDate: String) -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        return dateFormatter.date(from: strDate)
+    }
+    
     private static func getFormatedDate(_ date: Date) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         return dateFormatter.string(from: date)
     }
+    
+    
 
 }

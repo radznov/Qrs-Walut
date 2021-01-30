@@ -84,7 +84,6 @@ class APICalls {
                     if let decodedResponse = try? JSONDecoder().decode(CurrencyRates.self, from: data!) {
                         result = decodedResponse
                     }
-                print(data!)
             case let .failure(error):
                 print(error)
         }

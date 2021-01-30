@@ -18,9 +18,13 @@ struct CurrencyDetailRow: View {
 
                 Text(self.currencyDetail.0)
                     .font(.title3)
+                Text(Date.dayOfWeek(Date.convertStringToDate(self.currencyDetail.0)!)!)
+                    .font(.title3)
+                    .foregroundColor(.gray)
                 Spacer()
                 Text(String(self.currencyDetail.1))
                     .font(.title3)
+                
             }
         }
 }
