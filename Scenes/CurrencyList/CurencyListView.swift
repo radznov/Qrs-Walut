@@ -28,12 +28,15 @@ struct CurrencyList: View {
                 Spacer()
                 Menu {
                     Picker(selection: $currencyID, label: Text("")) {
-                        ForEach(viewModel.currencyListResults.currencyCodes.indices, id: \.self) { idx in
-                            Text(viewModel.currencyListResults.currencyCodes[idx]).tag(idx)
+                        ForEach(viewModel.currencyListResults.allCurrencyCodes.indices, id: \.self) { idx in
+                            Text(viewModel.currencyListResults.allCurrencyCodes[idx]).tag(idx)
                         }
                     }
+                    .onAppear() {
+                        viewModel.loadAnyCurrencyRates(viewModel.currencyListResults.allCurrencyCodes[currencyID])
+                    }
                     .onChange(of: currencyID) {
-                        viewModel.loadAnyCurrencyRates(viewModel.currencyListResults.currencyCodes[$0])
+                        viewModel.loadAnyCurrencyRates(viewModel.currencyListResults.allCurrencyCodes[$0])
                     }
                 }
                 
@@ -43,6 +46,9 @@ struct CurrencyList: View {
                         .scaleEffect(CGSize(width: 2, height: 2))
                         .padding()
                         
+                }
+                .onAppear() {
+                    currencyID = viewModel.getInitialCurrencyIdx()
                 }
             }
             

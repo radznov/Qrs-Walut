@@ -53,5 +53,21 @@ class CurrencyListViewModel: ObservableObject {
     func loadAnyCurrencyRates(_ currencyCode: String) {
         self.currencyListResults = api.getAnyRecentCurrencyRates(currencyCode)!
     }
+    
+    func getInitialCurrencyIdx() -> Int {
+        if let idx = currencyListResults.PLNIdx {
+            return idx
+        } else {
+            return 0
+        }
+    }
+    
+    func getCurrentCurrencyIdx() -> Int {
+        if let idx = currencyListResults.baseIdx {
+            return idx
+        } else {
+            return 0
+        }
+    }
 
 }

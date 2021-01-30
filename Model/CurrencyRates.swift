@@ -31,5 +31,17 @@ struct CurrencyRates: Codable {
     var currencyCodes: [String] {
         Array(ratesCleaned.keys.sorted {$1 > $0})
     }
+    
+    var allCurrencyCodes: [String] {
+        Array(rates.keys.sorted {$1 > $0})
+    }
+    
+    var PLNIdx: Int? {
+        allCurrencyCodes.firstIndex(of: "PLN")
+    }
+    
+    var baseIdx: Int? {
+        allCurrencyCodes.firstIndex(of: self.base)
+    }
 }
 
