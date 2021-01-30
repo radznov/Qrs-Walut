@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF91618A25C4558000FB7F7D /* CurrencyListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF91618925C4558000FB7F7D /* CurrencyListRow.swift */; };
+		BF91618D25C4582F00FB7F7D /* Double+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF91618C25C4582F00FB7F7D /* Double+Round.swift */; };
+		BF91619525C45CE300FB7F7D /* CurrencyRateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF91619425C45CE300FB7F7D /* CurrencyRateTime.swift */; };
+		BF91619825C45ED500FB7F7D /* CurrencyDetailsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF91619725C45ED500FB7F7D /* CurrencyDetailsRow.swift */; };
+		BF91619C25C47B0700FB7F7D /* Date+CurrentDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF91619B25C47B0700FB7F7D /* Date+CurrentDate.swift */; };
+		BF91619F25C47CC400FB7F7D /* Calendar+ISO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF91619E25C47CC400FB7F7D /* Calendar+ISO.swift */; };
+		BF9161A225C4827A00FB7F7D /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9161A125C4827A00FB7F7D /* LineChart.swift */; };
+		BF9860E425C2FD6C002BD27B /* Qrs_WalutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9860E325C2FD6C002BD27B /* Qrs_WalutApp.swift */; };
+		BF9860E825C2FD74002BD27B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9860E725C2FD74002BD27B /* Assets.xcassets */; };
+		BF9860EB25C2FD74002BD27B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9860EA25C2FD74002BD27B /* Preview Assets.xcassets */; };
+		BF98618F25C331F2002BD27B /* View+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF98617125C331F1002BD27B /* View+Navigation.swift */; };
+		BF98619025C331F2002BD27B /* String+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF98617325C331F1002BD27B /* String+Identifiable.swift */; };
+		BF98619225C331F2002BD27B /* MainScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF98617825C331F1002BD27B /* MainScreenCoordinator.swift */; };
+		BF98619325C331F2002BD27B /* MainScreenCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF98617925C331F1002BD27B /* MainScreenCoordinatorView.swift */; };
+		BF9A05D525C5713800EC1307 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A05D425C5713800EC1307 /* SettingsView.swift */; };
+		BF9A05D925C571B100EC1307 /* CurencyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A05D825C571B100EC1307 /* CurencyListView.swift */; };
+		BF9A05DC25C571D400EC1307 /* CurrencyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A05DB25C571D400EC1307 /* CurrencyListViewModel.swift */; };
+		BF9A05E025C571F700EC1307 /* CurrencyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A05DF25C571F700EC1307 /* CurrencyDetailsView.swift */; };
+		BF9A05E325C5722000EC1307 /* CurrencyDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A05E225C5722000EC1307 /* CurrencyDetailsViewModel.swift */; };
+		BFE7437A25C403AD00DF1465 /* CurrencyRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE7437925C403AD00DF1465 /* CurrencyRates.swift */; };
+		BFE7437F25C40BE300DF1465 /* CurrencyListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE7437E25C40BE300DF1465 /* CurrencyListCoordinator.swift */; };
+		BFE7438325C40BF700DF1465 /* CurrencyListCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE7438225C40BF700DF1465 /* CurrencyListCoordinatorView.swift */; };
+		BFE743A925C41CAD00DF1465 /* APICalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE743A825C41CAD00DF1465 /* APICalls.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF91618925C4558000FB7F7D /* CurrencyListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListRow.swift; sourceTree = "<group>"; };
+		BF91618C25C4582F00FB7F7D /* Double+Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Round.swift"; sourceTree = "<group>"; };
+		BF91619425C45CE300FB7F7D /* CurrencyRateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRateTime.swift; sourceTree = "<group>"; };
+		BF91619725C45ED500FB7F7D /* CurrencyDetailsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailsRow.swift; sourceTree = "<group>"; };
+		BF91619B25C47B0700FB7F7D /* Date+CurrentDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+CurrentDate.swift"; sourceTree = "<group>"; };
+		BF91619E25C47CC400FB7F7D /* Calendar+ISO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+ISO.swift"; sourceTree = "<group>"; };
+		BF9161A125C4827A00FB7F7D /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
+		BF9860E025C2FD6C002BD27B /* Qrs Walut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Qrs Walut.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF9860E325C2FD6C002BD27B /* Qrs_WalutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qrs_WalutApp.swift; sourceTree = "<group>"; };
+		BF9860E725C2FD74002BD27B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF9860EA25C2FD74002BD27B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BF9860EC25C2FD74002BD27B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF98617125C331F1002BD27B /* View+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Navigation.swift"; sourceTree = "<group>"; };
+		BF98617325C331F1002BD27B /* String+Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Identifiable.swift"; sourceTree = "<group>"; };
+		BF98617825C331F1002BD27B /* MainScreenCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenCoordinator.swift; sourceTree = "<group>"; };
+		BF98617925C331F1002BD27B /* MainScreenCoordinatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenCoordinatorView.swift; sourceTree = "<group>"; };
+		BF9A05D425C5713800EC1307 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BF9A05D825C571B100EC1307 /* CurencyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurencyListView.swift; sourceTree = "<group>"; };
+		BF9A05DB25C571D400EC1307 /* CurrencyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewModel.swift; sourceTree = "<group>"; };
+		BF9A05DF25C571F700EC1307 /* CurrencyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailsView.swift; sourceTree = "<group>"; };
+		BF9A05E225C5722000EC1307 /* CurrencyDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailsViewModel.swift; sourceTree = "<group>"; };
+		BFE7437925C403AD00DF1465 /* CurrencyRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRates.swift; sourceTree = "<group>"; };
+		BFE7437E25C40BE300DF1465 /* CurrencyListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListCoordinator.swift; sourceTree = "<group>"; };
+		BFE7438225C40BF700DF1465 /* CurrencyListCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListCoordinatorView.swift; sourceTree = "<group>"; };
+		BFE743A825C41CAD00DF1465 /* APICalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICalls.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF9860DD25C2FD6C002BD27B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF9860D725C2FD6C002BD27B = {
+			isa = PBXGroup;
+			children = (
+				BF9860E225C2FD6C002BD27B /* Qrs Walut */,
+				BF9860E125C2FD6C002BD27B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF9860E125C2FD6C002BD27B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF9860E025C2FD6C002BD27B /* Qrs Walut.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF9860E225C2FD6C002BD27B /* Qrs Walut */ = {
+			isa = PBXGroup;
+			children = (
+				BF9860E325C2FD6C002BD27B /* Qrs_WalutApp.swift */,
+				BF98617225C331F1002BD27B /* Extensions */,
+				BF9860E725C2FD74002BD27B /* Assets.xcassets */,
+				BFE743A225C417AF00DF1465 /* Coordinators */,
+				BF98618625C331F1002BD27B /* Views */,
+				BF9A05D025C570F400EC1307 /* Scenes */,
+				BFE7437425C4009A00DF1465 /* API */,
+				BF98616A25C331F1002BD27B /* Model */,
+				BF9860EC25C2FD74002BD27B /* Info.plist */,
+				BF9860E925C2FD74002BD27B /* Preview Content */,
+			);
+			path = "Qrs Walut";
+			sourceTree = "<group>";
+		};
+		BF9860E925C2FD74002BD27B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BF9860EA25C2FD74002BD27B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BF98616A25C331F1002BD27B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFE7437925C403AD00DF1465 /* CurrencyRates.swift */,
+				BF91619425C45CE300FB7F7D /* CurrencyRateTime.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF98617225C331F1002BD27B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF98617325C331F1002BD27B /* String+Identifiable.swift */,
+				BF98617125C331F1002BD27B /* View+Navigation.swift */,
+				BF91618C25C4582F00FB7F7D /* Double+Round.swift */,
+				BF91619B25C47B0700FB7F7D /* Date+CurrentDate.swift */,
+				BF91619E25C47CC400FB7F7D /* Calendar+ISO.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BF98617725C331F1002BD27B /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BF98617825C331F1002BD27B /* MainScreenCoordinator.swift */,
+				BF98617925C331F1002BD27B /* MainScreenCoordinatorView.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		BF98618625C331F1002BD27B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF91618925C4558000FB7F7D /* CurrencyListRow.swift */,
+				BF91619725C45ED500FB7F7D /* CurrencyDetailsRow.swift */,
+				BF9161A125C4827A00FB7F7D /* LineChart.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF9A05D025C570F400EC1307 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BF9A05D325C5712500EC1307 /* Settings */,
+				BF9A05D225C5711600EC1307 /* CurrencyDetails */,
+				BF9A05D125C5710B00EC1307 /* CurrencyList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		BF9A05D125C5710B00EC1307 /* CurrencyList */ = {
+			isa = PBXGroup;
+			children = (
+				BF9A05D825C571B100EC1307 /* CurencyListView.swift */,
+				BF9A05DB25C571D400EC1307 /* CurrencyListViewModel.swift */,
+			);
+			path = CurrencyList;
+			sourceTree = "<group>";
+		};
+		BF9A05D225C5711600EC1307 /* CurrencyDetails */ = {
+			isa = PBXGroup;
+			children = (
+				BF9A05DF25C571F700EC1307 /* CurrencyDetailsView.swift */,
+				BF9A05E225C5722000EC1307 /* CurrencyDetailsViewModel.swift */,
+			);
+			path = CurrencyDetails;
+			sourceTree = "<group>";
+		};
+		BF9A05D325C5712500EC1307 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				BF9A05D425C5713800EC1307 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		BFE7437425C4009A00DF1465 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BFE743A825C41CAD00DF1465 /* APICalls.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BFE7437D25C40BCD00DF1465 /* CurrencyList */ = {
+			isa = PBXGroup;
+			children = (
+				BFE7438225C40BF700DF1465 /* CurrencyListCoordinatorView.swift */,
+				BFE7437E25C40BE300DF1465 /* CurrencyListCoordinator.swift */,
+			);
+			path = CurrencyList;
+			sourceTree = "<group>";
+		};
+		BFE743A225C417AF00DF1465 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				BF98617725C331F1002BD27B /* MainScreen */,
+				BFE7437D25C40BCD00DF1465 /* CurrencyList */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF9860DF25C2FD6C002BD27B /* Qrs Walut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF9860EF25C2FD74002BD27B /* Build configuration list for PBXNativeTarget "Qrs Walut" */;
+			buildPhases = (
+				BF9860DC25C2FD6C002BD27B /* Sources */,
+				BF9860DD25C2FD6C002BD27B /* Frameworks */,
+				BF9860DE25C2FD6C002BD27B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Qrs Walut";
+			productName = "Qrs Walut";
+			productReference = BF9860E025C2FD6C002BD27B /* Qrs Walut.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF9860D825C2FD6C002BD27B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					BF9860DF25C2FD6C002BD27B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = BF9860DB25C2FD6C002BD27B /* Build configuration list for PBXProject "Qrs Walut" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF9860D725C2FD6C002BD27B;
+			productRefGroup = BF9860E125C2FD6C002BD27B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF9860DF25C2FD6C002BD27B /* Qrs Walut */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF9860DE25C2FD6C002BD27B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF9860EB25C2FD74002BD27B /* Preview Assets.xcassets in Resources */,
+				BF9860E825C2FD74002BD27B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF9860DC25C2FD6C002BD27B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF9A05D925C571B100EC1307 /* CurencyListView.swift in Sources */,
+				BFE7437F25C40BE300DF1465 /* CurrencyListCoordinator.swift in Sources */,
+				BFE7437A25C403AD00DF1465 /* CurrencyRates.swift in Sources */,
+				BF91618A25C4558000FB7F7D /* CurrencyListRow.swift in Sources */,
+				BFE7438325C40BF700DF1465 /* CurrencyListCoordinatorView.swift in Sources */,
+				BFE743A925C41CAD00DF1465 /* APICalls.swift in Sources */,
+				BF9A05E025C571F700EC1307 /* CurrencyDetailsView.swift in Sources */,
+				BF98619325C331F2002BD27B /* MainScreenCoordinatorView.swift in Sources */,
+				BF98619025C331F2002BD27B /* String+Identifiable.swift in Sources */,
+				BF91619C25C47B0700FB7F7D /* Date+CurrentDate.swift in Sources */,
+				BF91619825C45ED500FB7F7D /* CurrencyDetailsRow.swift in Sources */,
+				BF91619525C45CE300FB7F7D /* CurrencyRateTime.swift in Sources */,
+				BF9161A225C4827A00FB7F7D /* LineChart.swift in Sources */,
+				BF91618D25C4582F00FB7F7D /* Double+Round.swift in Sources */,
+				BF9A05DC25C571D400EC1307 /* CurrencyListViewModel.swift in Sources */,
+				BF9860E425C2FD6C002BD27B /* Qrs_WalutApp.swift in Sources */,
+				BF91619F25C47CC400FB7F7D /* Calendar+ISO.swift in Sources */,
+				BF98618F25C331F2002BD27B /* View+Navigation.swift in Sources */,
+				BF9A05E325C5722000EC1307 /* CurrencyDetailsViewModel.swift in Sources */,
+				BF98619225C331F2002BD27B /* MainScreenCoordinator.swift in Sources */,
+				BF9A05D525C5713800EC1307 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BF9860ED25C2FD74002BD27B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF9860EE25C2FD74002BD27B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF9860F025C2FD74002BD27B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Qrs Walut/Preview Content\"";
+				DEVELOPMENT_TEAM = KU82LMQ3LB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Qrs Walut/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rdktrnwsk.Qrs-Walut";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF9860F125C2FD74002BD27B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Qrs Walut/Preview Content\"";
+				DEVELOPMENT_TEAM = KU82LMQ3LB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Qrs Walut/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rdktrnwsk.Qrs-Walut";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF9860DB25C2FD6C002BD27B /* Build configuration list for PBXProject "Qrs Walut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF9860ED25C2FD74002BD27B /* Debug */,
+				BF9860EE25C2FD74002BD27B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF9860EF25C2FD74002BD27B /* Build configuration list for PBXNativeTarget "Qrs Walut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF9860F025C2FD74002BD27B /* Debug */,
+				BF9860F125C2FD74002BD27B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF9860D825C2FD6C002BD27B /* Project object */;
+}
