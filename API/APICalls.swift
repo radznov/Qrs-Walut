@@ -43,6 +43,42 @@ class APICalls {
         
     }
     
+    func getAnyToOtherCurrencyRateTime(_ currencyCodeFrom: String, _ currencyCodeTo: String) -> CurrencyRateTime? {
+        
+        var result: CurrencyRateTime?
+        
+        let path: String = "https://api.exchangeratesapi.io/history?start_at=\(Date.lastWeekMondayDate)&end_at=\(Date.currentDate)&base=\(currencyCodeFrom)&symbols=\(currencyCodeTo)"
+
+        switch self.makeAPICall(path) {
+            case let .success(data):
+                if let decodedResponse = try? self.decoder.decode(CurrencyRateTime.self, from: data!) {
+                        result = decodedResponse
+                    }
+            case let .failure(error):
+                print(error)
+        }
+        return result
+        
+    }
+    
+    func getAnyRecentCurrencyRates(_ currencyCode: String) -> CurrencyRates? {
+        
+        var result: CurrencyRates?
+        
+        let path: String = "https://api.exchangeratesapi.io/latest?base=\(currencyCode)"
+        
+        switch self.makeAPICall(path) {
+            case let .success(data):
+                if let decodedResponse = try? self.decoder.decode(CurrencyRates.self, from: data!) {
+                        result = decodedResponse
+                    }
+                print(data!)
+            case let .failure(error):
+                print(error)
+        }
+        return result
+    }
+    
     func getPolishRecentCurrencyRates() -> CurrencyRates? {
         
         var result: CurrencyRates?

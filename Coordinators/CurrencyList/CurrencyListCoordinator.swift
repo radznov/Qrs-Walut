@@ -31,8 +31,8 @@ class CurrencyListCoordinator: ObservableObject, Identifiable {
 
     // MARK: Methods
 
-    func openDetails(_ currencyCode: String) {
-        self.detailViewModel = .init(currencyCode: currencyCode, coordinator: self)
+    func openDetails(from currencyCodeFrom: String, to currencyCodeTo: String) {
+        self.detailViewModel = .init(currencyCodeFrom: currencyCodeFrom, currencyCodeTo: currencyCodeTo, coordinator: self)
     }
     
 
