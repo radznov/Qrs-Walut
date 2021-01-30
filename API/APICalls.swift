@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Combine
 
 enum NetworkError: Error {
     case url
@@ -15,40 +14,56 @@ enum NetworkError: Error {
 
 class APICalls {
     
-//     var isLoading = true
-//     var currencyListResults = CurrencyRates(rates: [:], base: "", date: "")
-
     let decoder = JSONDecoder()
     
     init() {
         decoder.keyDecodingStrategy = .convertFromSnakeCase
     }
     
+    // MARK: API calls
+    
     func getPolishToOtherCurrencyRateTime(_ currencyCode: String) -> CurrencyRateTime? {
-        
-        var result: CurrencyRateTime?
         
         let path: String = "https://api.exchangeratesapi.io/history?start_at=\(Date.lastWeekMondayDate)&end_at=\(Date.currentDate)&base=PLN&symbols=\(currencyCode)"
         
-        switch self.makeAPICall(path) {
-            case let .success(data):
-                if let decodedResponse = try? self.decoder.decode(CurrencyRateTime.self, from: data!) {
-                        result = decodedResponse
-                    }
-                print(data!)
-            case let .failure(error):
-                print(error)
-        }
-        return result
-        
+        return getCurrencRateTime(path)
     }
     
     func getAnyToOtherCurrencyRateTime(_ currencyCodeFrom: String, _ currencyCodeTo: String) -> CurrencyRateTime? {
         
-        var result: CurrencyRateTime?
-        
         let path: String = "https://api.exchangeratesapi.io/history?start_at=\(Date.lastWeekMondayDate)&end_at=\(Date.currentDate)&base=\(currencyCodeFrom)&symbols=\(currencyCodeTo)"
 
+        return getCurrencRateTime(path)
+    }
+    
+    func getAnyRecentCurrencyRates(_ currencyCode: String) -> CurrencyRates? {
+
+        let path: String = "https://api.exchangeratesapi.io/latest?base=\(currencyCode)"
+        
+        return getCurrencyRates(path)
+    }
+    
+    func getPolishRecentCurrencyRates() -> CurrencyRates? {
+
+        let path: String = "https://api.exchangeratesapi.io/latest?base=PLN"
+        
+        return getCurrencyRates(path)
+    }
+    
+    func getRecentCurrencyRates() -> CurrencyRates? {
+        
+        let path: String = "https://api.exchangeratesapi.io/latest"
+        
+        return getCurrencyRates(path)
+        
+    }
+    
+    // MARK: private functions
+    
+    private func getCurrencRateTime(_ path: String) -> CurrencyRateTime? {
+       
+        var result: CurrencyRateTime?
+        
         switch self.makeAPICall(path) {
             case let .success(data):
                 if let decodedResponse = try? self.decoder.decode(CurrencyRateTime.self, from: data!) {
@@ -58,50 +73,11 @@ class APICalls {
                 print(error)
         }
         return result
-        
     }
     
-    func getAnyRecentCurrencyRates(_ currencyCode: String) -> CurrencyRates? {
+    private func getCurrencyRates(_ path: String) -> CurrencyRates? {
         
         var result: CurrencyRates?
-        
-        let path: String = "https://api.exchangeratesapi.io/latest?base=\(currencyCode)"
-        
-        switch self.makeAPICall(path) {
-            case let .success(data):
-                if let decodedResponse = try? self.decoder.decode(CurrencyRates.self, from: data!) {
-                        result = decodedResponse
-                    }
-                print(data!)
-            case let .failure(error):
-                print(error)
-        }
-        return result
-    }
-    
-    func getPolishRecentCurrencyRates() -> CurrencyRates? {
-        
-        var result: CurrencyRates?
-        
-        let path: String = "https://api.exchangeratesapi.io/latest?base=PLN"
-        
-        switch self.makeAPICall(path) {
-            case let .success(data):
-                if let decodedResponse = try? self.decoder.decode(CurrencyRates.self, from: data!) {
-                        result = decodedResponse
-                    }
-                print(data!)
-            case let .failure(error):
-                print(error)
-        }
-        return result
-    }
-    
-    func getRecentCurrencyRates() -> CurrencyRates? {
-        
-        var result: CurrencyRates?
-        
-        let path: String = "https://api.exchangeratesapi.io/latest"
         
         switch self.makeAPICall(path) {
             case let .success(data):
